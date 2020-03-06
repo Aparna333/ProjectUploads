@@ -1,0 +1,34 @@
+<br/>
+<div class="container p-3 my-3 border">
+<table>
+    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+
+ <div style="width: 300px;">
+   <form (ngSubmit)="onSubmit()">
+     <div class="form-group">
+       <label for="ItemName"><h3 class="text-dark">Enter ItemName: </h3></label>
+       <input type="text" class="form-control" id="itemName" required [(ngModel)]="itemName" name="itemName">
+       <br/>
+       <button type="submit" class="btn btn-success">Search</button>
+     </div>
+   </form>
+ </div>
+    </table>
+ <div class="card-columns">
+   <div class="row">
+     <div class="col-sm-10">
+ <ul  *ngFor="let product of items">
+     <div class="card bg-light">
+       <div class="card-body text-center">
+         <table><td><tr>
+       <app-product-details [item] = "product"></app-product-details></tr></td></table>
+
+   </div>
+   </div> 
+ 
+  </ul>
+ </div>
+ </div>
+ </div>
+</div>
+  

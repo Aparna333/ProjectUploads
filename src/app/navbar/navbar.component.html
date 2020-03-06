@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"><i>ShoppingCart</i></a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="Home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="searchproduct">Search</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" routerLink="login">LoginBuyer</a>
+          </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
+          SignIn
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="buyersign">Buyer</a>
+          <a class="dropdown-item" routerLink="sellersign">Seller</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <br/>
+<div>
+  <button type="submit" class="btn btn-outline-success" routerLink="displaycart">ShoppingCart</button>&nbsp;&nbsp;
+  <button type="submit" class="btn btn-outline-primary" routerLink="seller">Seller</button>
+</div>

@@ -1,0 +1,26 @@
+<br/>
+<div class="container">
+    <h2>Cart Items</h2>
+    <table class="table table-stripped table-hover table-info table-bordered">
+        <thead class="thead-light">
+            <tr>
+                <th>cartId</th>
+              
+                <th>itemId</th>
+              
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr *ngFor =" let cart of displayCart ">
+               <td>{{cart.cartId}}</td>
+                
+                <td>{{cart.itemId}}</td>
+                
+                <td>{{cart.quantity}}</td>
+                
+                
+            </tr>
+       </tbody>
+    </table>
+</div>

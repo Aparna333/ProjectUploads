@@ -1,0 +1,74 @@
+<br/>
+<div class="container p-3 my-3 border">
+    <div class="row">
+        <div class="col-sm"> 
+         <div style="width: 300px;">
+           <form (ngSubmit)="additems()">
+    
+      <div class="form-group">
+        <label for="lastname">ItemName</label>
+        <input type="text" class="form-control" itemName="itemName" required [(ngModel)]="itemName" name="itemName">
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Itemprice</label>
+        <input type="text" class="form-control" itemPrice="price" required [(ngModel)]="price" name="price">
+      </div>
+      <div class="form-group">
+        <label for="lastname">CategoryId</label>
+        <input type="text" class="form-control" categoryId="category" required [(ngModel)]="category" name="category">
+      </div>
+      <div class="form-group">
+        <label for="lastname">SubCategoryId</label>
+        <input type="text" class="form-control" subcategoryId="subCategory" required [(ngModel)]="subCategory" name="subCategory">
+      </div>
+
+      <div class="form-group">
+          <label for="lastname">Manufacturer</label>
+          <input type="text" class="form-control" stockNumber="manufacturer" required [(ngModel)]="manufacturer" name="manufacturer">
+        </div>
+
+      <div class="form-group">
+        <label for="lastname">stockNumber</label>
+        <input type="text" class="form-control" stockNumber="stockNumber" required [(ngModel)]="stockNumber" name="stockNumber">
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">description</label>
+        <input type="text" class="form-control" description="description" required [(ngModel)]="description" name="description">
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Remarks</label>
+        <input type="text" class="form-control" remarks="remarks" required [(ngModel)]="remarks" name="remarks">
+      </div>
+
+      <!--<div class="form-group">
+        <label for="picture">ProductName</label>
+        <input type="text" class="form-control" productName="picture" required [(ngModel)]="picture" name="picture">
+      </div>-->
+  
+      <div class="btn-group">
+        <button type="submit" class="btn btn-success">Submit</button>&nbsp; &nbsp;
+        <button type="update" class="btn btn-primary" (click) = "updateitem()">update</button>
+      </div>
+    </form>
+  </div> 
+</div>
+
+    
+<div class="col-sm"> 
+ <div style="width: 300px;">
+    <form (ngSubmit)="deleteitem()">
+      <div class="form-group">
+        <label for="lastname">DeleteSellerId</label>
+        <input type="text" class="form-control" deletedItem="deleteItem" required [(ngModel)]="deleteItem" name="deleteItem">
+      </div>
+      <div class="btn-group">
+         <button type="submit" class="btn btn-danger">delete</button>
+      </div>
+     </form>
+ </div>
+</div>
+</div>
+</div>

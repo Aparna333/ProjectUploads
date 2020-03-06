@@ -1,0 +1,12 @@
+.mat-toolbar.mat-primary {
+    background: #01050a;
+    color: #fff;
+  }
+
+.spacer
+{
+    flex:1 1 auto;
+}
+img {
+    border-radius: 50%;
+  }
